@@ -11,7 +11,10 @@
                                 <img style="width: 100%" src="{% static 'workExperience/odessasdeintern.png' %}" alt="" class="img-responsive border border-light">
                                 <div class="overlay">
                                     <div class="hover-body-content">
-                                        Software Engineer @ Odessa
+                                        <div class="d-flex flex-column">
+                                            <div class="title">Software Engineer @ Odessa Inc</div>
+                                            <button style="color: white" class="btn btn-link" data-toggle="modal" data-target="#sdeRole">See More</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +26,10 @@
                                 <img style="width: 100%" src="{% static 'workExperience/odessasdeintern.png' %}" alt="" class="img-responsive border border-light">
                                 <div class="overlay">
                                     <div class="hover-body-content">
-                                        Software Engineer Intern @ Odessa
+                                        <div class="d-flex flex-column">
+                                            <div class="title">Software Engineer Intern @ Odessa Inc</div>
+                                            <button style="color: white" class="btn btn-link" data-toggle="modal" data-target="#sdeinternRole">See More</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +43,10 @@
                                 <img style="width: 100%" src="{% static 'workExperience/cntaship.png' %}" alt="" class="img-responsive border border-light">
                                 <div class="overlay">
                                     <div class="hover-body-content">
-                                        Online Teaching Assistant @ Coding Ninjas
+                                        <div class="d-flex flex-column">
+                                            <div class="title">Online Teaching Assistant @ Coding Ninjas</div>
+                                            <button style="color: white" class="btn btn-link" data-toggle="modal" data-target="#taRole">See More</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -49,5 +58,83 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="sdeRole">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Software Engineer @ Odessa Inc.</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <h6>Duration: 5 months | May 2019 - Sept 2019</h6>
+                            <ul>
+                                <li>Worked with feature development team, used C# and LINQ to plan, to design and develop the equated monthly installment for feature Lessee and Lessor.</li>
+                                <li>Wrote C# and LINQ code to support the business logic.</li>
+                                <li>Developed LeaseWave Prototype with C#, LINQ, SQL Server.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="sdeinternRole">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Software Engineer Intern @ Odessa Inc.</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <h6>Duration: 8 months | Oct 2018 - May 2019</h6>
+                            <ul>
+                                <li>Worked with feature development team and help them in developing features</li>
+                                <li>Wrote C# and LINQ code to support the business logic.</li>
+                                <li>Fixed bugs in codes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="taRole">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Online Teaching Assistant @ Coding Ninjas</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <h6>Duration: 4 months | Dec 2019 - April 2020</h6>
+                            <ul>
+                                <li>Take doubt sessions.</li>
+                                <li>Debug students codes</li>
+                                <li>Help students in their assignments and projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

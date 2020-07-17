@@ -57,7 +57,8 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'home/templates'),
             os.path.join(BASE_DIR, 'workExperience/templates'),
-            os.path.join(BASE_DIR, 'templates')
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'projects/templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,5 +125,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "workExperience/static")
+    os.path.join(BASE_DIR, "workExperience/static"),
+    os.path.join(BASE_DIR, "projects/static"),
 ]

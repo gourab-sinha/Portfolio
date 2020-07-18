@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+<link rel="stylesheet" href="{% static 'styles.css' %}">
     <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col-md fixed panel" style="padding: 0!important;">
@@ -17,11 +17,11 @@
             <div class="text-center panel">
                 <div class="btn" style="font-family: 'PT Serif', serif">
                     <a href="{% url 'workExperience:workExperience' %}" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Work Experience</a>
-                    <a href="#" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Projects</a>
-                    <a href="#" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Certificates</a>
-                    <a href="#" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Skills</a>
-                    <a href="#" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Achievements</a>
-                    <a href="#" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Resume</a>
+                    <a href="{% url 'projects:projects' %}" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Projects</a>
+                    <a href="{% url 'certifications:certifications' %}" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Certificates</a>
+                    <a href="#" data-toggle="modal" data-target="#skills" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Skills</a>
+                    <a href="#" data-toggle="modal" data-target="#achievements" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Achievements</a>
+                    <a href="#" data-toggle="modal" data-target="#resume" class="btn btn-primary btn-rounded btn-md btn-block mt-5" style="height: 75%;">Resume</a>
                 </div>
                 <div class="d-md-block mt-4 mb-5">
                     <a href="https://twitter.com/gourab19964u" class="text-black mx-2">
@@ -43,5 +43,76 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="skills">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Skills</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img style="height: 50%;width: 100%;" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+                            <ul>
+                                <li>Programming : C++, Python, Numpy, Pandas, BeautifulSoup, SQL Server, Java(Basic), HTML,CSS</li>
+                                <li>Web Frameworks : Django, Flask, Bootstrap</li>
+                                <li>Version Control : Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="modal" id="achievements">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Achievements</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img style="height: 50%;width: 100%;" src="https://images.unsplash.com/photo-1578269174936-2709b6aeb913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" alt="">
+                            <ul>
+                                <li>1st Runner up TIE Hackathon Chandigarh, 2017</li>
+                                <li>Codeapoclaypse 3.0 Final Round, 2018</li>
+                                <li>Codechef SnackDown 2019 Online Elimination Round</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="modal" id="resume">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Resume</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div style="height: 100vh;width: 100%;" class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <iframe src="https://drive.google.com/file/d/11Y79rx38sVGp1ekKaUcaxmJKyPpA8ZlR/preview" style="width:100%; height:600px;"></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://drive.google.com/uc?export=download&id=11Y79rx38sVGp1ekKaUcaxmJKyPpA8ZlR" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 {% endblock content %}

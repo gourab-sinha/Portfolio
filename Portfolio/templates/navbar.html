@@ -1,5 +1,6 @@
 {%extends 'base.html' %}
 {% block content %}
+{% load static %}
 <div class="container-fluid bg-light">
     <div class="row">
         <div class="col-md-3 panel sticky-top"  style="padding: 0!important;scroll-behavior: smooth;">
@@ -59,6 +60,36 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="{% url 'certifications:certifications' %}" class="nav-link font-weight-bold text-dark" style="font-family: 'PT Serif',Serif;">Certifications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#javabasic" style="font-family: 'PT Serif',Serif;">Java Basic</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#restapi" style="font-family: 'PT Serif',Serif;">REST API Intermediate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#problemsolvingbasic" style="font-family: 'PT Serif',Serif;">Problem Solving Basic</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#pythonbasic" style="font-family: 'PT Serif',Serif;">Python Basic</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#dsmlexcellence" style="font-family: 'PT Serif',Serif;">Data Science and Machine Learning Excellence</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#dsmlcomplete" style="font-family: 'PT Serif',Serif;">Data Science and Machine Learning Completion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#tashipcertificate" style="font-family: 'PT Serif',Serif;">Online Teaching Assistant</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#udacitynano" style="font-family: 'PT Serif',Serif;">Udacity Full Stack Nano Degree</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#ccdsap" style="font-family: 'PT Serif',Serif;">Codechef Certified Data Structure and Algorithm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="modal" data-target="#btech" style="font-family: 'PT Serif',Serif;">Bachelor of Technology</a>
                                 </li>
                             </ul>
                         </div>
@@ -361,6 +392,225 @@
         </div>
 
         <!--  Certifications       -->
+        <div class="modal" id="javabasic">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Java Basic</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'javabasic.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://www.hackerrank.com/certificates/9b599f557032" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="restapi">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>REST API</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'restapi.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://www.hackerrank.com/certificates/558b081a95e9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="problemsolvingbasic">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Problem Solving Basic</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'problemsolvingbasic.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://www.hackerrank.com/certificates/7ed755647bc9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="pythonbasic">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Python Basic</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'pythonbasic.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://www.hackerrank.com/certificates/8c1a4312dec8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="dsmlexcellence">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Data Science and Machine Learning Excellence</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'dsmlexcellence.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://students.codingninjas.com/verify/16db583e36624322" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="dsmlcomplete">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Data Science and Machine Learning Completion</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'dsmlcomplete.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://students.codingninjas.com/verify/43ae11fab80c160d" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="tashipcertificate">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Online Teaching Assistant</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'taship.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://ninjasfiles.s3.amazonaws.com/certificate15539fab759c9437fb4522d4fb3c3f97ce71.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="udacitynano">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Udacity Full Stack Nano Degree</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'udacitynano.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://confirm.udacity.com/EG3V34KA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="ccdsap">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Online Teaching Assistant</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'ccdsap.png' %}" alt="">
+                            <ul>
+                                <li>Username: gourab19964u</li>
+                                <li>Certificate ID: bcf0a8b</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://www.codechef.com/certificates/verify" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="btech">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Bachelor of Technology</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column modal-content-font">
+                            <img src="{% static 'btech.png' %}" alt="">
+                            <ul>
+                                <li>Registration: 11503537</li>
+                                <li>Certificate ID: 250746</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-content-font">
+                        <a href="https://www.lpu.in/authenticate/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Verify</a>
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
 
